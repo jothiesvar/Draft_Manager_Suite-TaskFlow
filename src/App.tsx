@@ -9,6 +9,7 @@ import LeadsList from './components/Leads/LeadsList';
 import TaskBoard from './components/Tasks/TaskBoard';
 import InvoicesList from './components/Invoices/InvoicesList';
 import CalendarView from './components/Calendar/CalendarView';
+import TimeTrackingView from './components/TimeTracking/TimeTrackingView';
 import ReportsSection from './components/Reports/ReportsSection';
 import ProfileSection from './components/Profile/ProfileSection';
 
@@ -46,7 +47,7 @@ const AppContent: React.FC = () => {
       case 'calendar':
         return <CalendarView />;
       case 'time-tracking':
-        return <div className="p-6"><h1 className="text-2xl font-bold">Time Tracking - Coming Soon</h1></div>;
+        return <TimeTrackingView />;
       case 'reports':
         return <ReportsSection />;
       case 'profile':
